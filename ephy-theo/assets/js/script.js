@@ -167,6 +167,10 @@ function galleryNav() {
   $(window).scrollTop($('#gallery').position().top);
 }
 
-function giftNav() {
+function tamuNav() {
   $(window).scrollTop($('#tamu').position().top);
+}
+
+function giftNav() {
+  $(window).scrollTop($('#gift').position().top);
 }
