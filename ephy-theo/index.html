@@ -41,7 +41,7 @@
     <div class="absolute top-1/2 -translate-y-1/2 text-center w-full text-white">
       <h1 class="text-5xl lg:text-9xl font-dancing">Theo & Ephi</h1>
       <p class="mt-5">Kpd Bpk/Ibu/Saudara/i</p>
-      <p id="inviteName" class="mt-3 font-dancing text-4xl"> - </p>
+      <p id="nama" class="mt-3 font-dancing text-4xl">  </p>
       <p class="mt-4 italic text-sm font-light">tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
       <button id="btn-open" class="bg-pink-400 p-2 mt-3 rounded-xl">Buka Undangan</button>
     </div>
@@ -426,6 +426,17 @@
       // Berikan umpan balik kepada pengguna
       alert("Nomor Rekening telah disalin: " + nomorRekening.textContent);
     }
+
+
+    let url = window.location.href;
+        let cut = url.substr(46);
+        if (cut === "") {
+            document.getElementById("nama").innerHTML = `Belum ada nama tamu undangan`;
+        } else {
+            let nama = cut.replace(/-/g, " ");
+            document.getElementById("nama").innerHTML = nama;
+        }
+
     </script>
     
 </body>
