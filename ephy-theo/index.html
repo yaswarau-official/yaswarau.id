@@ -22,18 +22,14 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 
-    <!-- Style -->
-    <style>
-      .custom-left-margin {
-          margin-left: 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
-      }
-    </style>
-
-    <!-- Font Awesome -->
     <!-- Tautan CDN untuk Font Awesome 5 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  </head>
+
+
+
+
+</head>
 <body id="body" class="overflow-hidden relative">
 
   <div id="cover" class="rounded-2xl w-4/5 h-4/5 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black fixed z-50">
@@ -41,7 +37,9 @@
     <div class="absolute top-1/2 -translate-y-1/2 text-center w-full text-white">
       <h1 class="text-5xl lg:text-9xl font-dancing">Theo & Ephi</h1>
       <p class="mt-5">Kpd Bpk/Ibu/Saudara/i</p>
-      <p id="nama" class="mt-3 font-dancing text-4xl">  </p>
+      
+      <p id="inviteName" class="mt-3 font-dancing text-4xl"> - </p>
+
       <p class="mt-4 italic text-sm font-light">tanpa Mengurangi Rasa Hormat, Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
       <button id="btn-open" class="bg-pink-400 p-2 mt-3 rounded-xl">Buka Undangan</button>
     </div>
@@ -74,9 +72,9 @@
             <img class="mx-auto h-6 md:h-9" src="assets/decoration/image.svg" loading="lazy" alt="">
             <p class="text-[0.6rem] md:text-base">Galeri</p>
           </div>
-          <div onclick="tamuNav()">
+          <div onclick="hadirNav()">
             <img class="mx-auto h-6 md:h-9" src="assets/decoration/user.svg" loading="lazy" alt="">
-            <p class="text-[0.6rem] md:text-base">Tamu</p>
+            <p class="text-[0.6rem] md:text-base">Kehadiran</p>
           </div>
           <div onclick="giftNav()">
             <img class="mx-auto h-6 md:h-9" src="assets/decoration/gift.svg" loading="lazy" alt="">
@@ -101,25 +99,25 @@
   <main class="bg-repeat top-0" style="background-image: url('assets/decoration/hand_painted_neutrol_toned_watercolour_design_2706\ 1.jpg')">
     <div class="top-0 w-full">
 
-      <section id="couple-profile" class="text-center pt-20">
+    <section id="couple-profile" class="text-center pt-20">
         <h1 class="swipe translate-y-40 duration-1000 transition-all font-dancing text-3xl md:text-5xl">Pasangan</h1>
         <div class="flex flex-col lg:flex-row mt-20 gap-16 xl:gap-24 justify-center">
-          <div>
+            <div>
             <h1 class="swipe translate-y-40 duration-1000 transition-all text-2xl md:text-3xl">Mempelai Pria</h1>
             <img class="popup scale-50 duration-1000 transition-all mt-8 mx-auto" src="assets/image/2.png" loading="lazy" alt="groom">
             <p class="swipe translate-y-40 duration-1000 transition-all mt-100 font-bold text-xl md:text-2xl">Bripda. Theo Aristi Waitariri</p>
             <p class="swipe translate-y-40 duration-1000 transition-all mt-100 text-md md:text-md">Putra dari Bapak Aleks Joko Waitariri <br> dan Ibu Alfonsina Jandewoa, S.Tr.Keb</p>
-          </div>
-          <h1 class="popup scale-50 duration-1000 transition-all font-dancing my-auto text-9xl">&</h1>
-          <div>
+            </div>
+            <h1 class="popup scale-50 duration-1000 transition-all font-dancing my-auto text-9xl">&</h1>
+            <div>
             <h1 class="swipe translate-y-40 duration-1000 transition-all text-2xl md:text-3xl">Mempelai Wanita</h1>
             <img class="popup scale-50 duration-1000 transition-all mt-8 mx-auto" src="assets/image/1.png" loading="lazy" alt="groom">
             <p class="swipe translate-y-40 duration-1000 transition-all mt-2 font-bold text-xl md:text-2xl">Selviana Enjelitha Aprilia Sada</p>
             <p class="swipe translate-y-40 duration-1000 transition-all mt-100 text-md md:text-md">Putri dari Bapak Piether Sada, SE., MM <br> dan Ibu Marlien S. Ibo, SE</p>
-          </div>
+            </div>
         </div>
         <img class="popup scale-50 duration-1000 transition-all ml-auto mr-auto w-4/5 mt-20 lg:mt-40" src="assets/decoration/dekor1 1.png" loading="lazy" alt="">
-      </section>
+        </section>
 
       <section class="mt-20 lg:mt-40 text-center">
         <div class="mx-auto w-[95%] h-auto py-4 bg- mt-14 bg-black/10 rounded-2xl shadow-sm shadow-slate-50">
@@ -227,46 +225,19 @@
                     <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02476.jpg" loading="lazy" alt="">
                   </div>
                   <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02522.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02541.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
                     <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02642.jpg" loading="lazy" alt="">
                   </div>
                   <div class="swiper-slide">
                     <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02648.jpg" loading="lazy" alt="">
                   </div>
                   <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02719.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02771.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02806.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02875.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV02969.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV03241.jpg" loading="lazy" alt="">
+                    <img class="w-full h-full object-cover" src="assets/image/prewed/PWON9544.jpg" loading="lazy" alt="">
                   </div>
                   <div class="swiper-slide">
                     <img class="w-full h-full object-cover" src="assets/image/prewed/ALV03295.jpg" loading="lazy" alt="">
                   </div>
                   <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/PWON0005.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/PWON0028.jpg" loading="lazy" alt="">
-                  </div>
-                  <div class="swiper-slide">
-                    <img class="w-full h-full object-cover" src="assets/image/prewed/PWON9654.jpg" loading="lazy" alt="">
+                    <img class="w-full h-full object-cover" src="assets/image/prewed/ALV03525.jpg" loading="lazy" alt="">
                   </div>
                 </div>
                 <!-- If we need pagination -->
@@ -281,83 +252,71 @@
                   <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02445_1.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02465.jpg" loading="lazy" alt="">
+                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02771.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/PWON9654Webqwe44.jpg" loading="lazy" alt="">
+                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV03295.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02522.jpg" loading="lazy" alt="">
+                  <img class="object-cover w-full h-full" src="assets/image/prewed/PWON0019.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02541.jpg" loading="lazy" alt="">
+                  <img class="object-cover w-full h-full" src="assets/image/prewed/PWON9654webbbbbbbbbb.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02642.jpg" loading="lazy" alt="">
+                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV03621.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
                   <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02648.jpg" loading="lazy" alt="">
                 </div>
                 <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02719.jpg" loading="lazy" alt="">
-                </div>
-                <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02771.jpg" loading="lazy" alt="">
-                </div>
-                <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02806.jpg" loading="lazy" alt="">
-                </div>
-                <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV02875.jpg" loading="lazy" alt="">
-                </div>
-                <div class="popup scale-50 duration-1000 transition-all w-40 h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 ease-in-out m-0.5">
-                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV03241.jpg" loading="lazy" alt="">
+                  <img class="object-cover w-full h-full" src="assets/image/prewed/ALV03399.jpg" loading="lazy" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <img class="popup scale-50 duration-1000 transition-all ml-auto mr-auto w-4/5 mt-20 lg:mt-40" src="assets/decoration/dekor1 1.png" loading="lazy" alt="">
+
       </section>
+      <img class="popup scale-50 duration-1000 transition-all ml-auto mr-auto mt-20 lg:mt-40" src="assets/decoration/dekor4 1.png" loading="lazy" alt="decoration">
 
-      <section id="tamu">
-        <div class="row">
+      <section id="hadir">
+            <div class="w-[95%] mx-auto lg:w-[929px] h-auto bg-black/10 rounded-2xl ml-auto mr-auto pt-16 pb-6 text-center shadow-sm shadow-slate-50">
+              <h1 class="swipe translate-y-40 duration-1000 transition-all font-dancing text-3xl md:text-5xl text-center">Kehadiran</h1>
+      
+              <form id="daftar-kehadiran" class="mt-1" method="post" action="https://script.google.com/macros/s/AKfycbx-BQF4_yUxFthfpRdIhrsFhlX8GeZiC7oCH3qkrU575x6bm0eBdIvT29cIbtTN38oiEQ/exec">
+                <div class="mb-3 p-2">
+                  <label for="nama" class="form-label">Nama Anda:</label>
+                  <input type="text" id="nama" name="nama" class="form-control" placeholder="Masukan Nama" required>
+                </div>
+                <div class="mb-3 p-2">
+                  <label for="email" class="form-label">Email Anda:</label>
+                  <input type="email" id="email" name="email" class="form-control" placeholder="Masukan Email" required>
+                </div>
+                <div class="mb-3 p-2">
+                  <label for="konfirmasi" class="form-label">Konfirmasi Kehadiran:</label>
+                  <select id="konfirmasi" name="konfirmasi" class="form-select">
+                    <option value="Akan Hadir">Akan Hadir</option>
+                    <option value="Tidak Bisa Hadir">Tidak Bisa Hadir</option>
+                  </select>
+                </div>
 
-          <div class="col-md-6">
-            <div class="bg-black/10 w-[95%] mx-auto h-auto mt-20 lg:mt-40 pt-16 pb-6 lg:pb-14 relative rounded-2xl shadow-sm shadow-slate-50">
-                <h1 class="swipe translate-y-40 duration-1000 transition-all font-dancing text-3xl md:text-5xl text-center">Keluarga <br> Mempelai Pria</h1>
-                <p class="swipe translate-y-40 duration-1000 transition-all mt-7 text-xl md:text-2xl custom-left-margin">Turut Mengundang :</p>
-                <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">1. Bapak .....</p>
-                <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">2. Bapak .....</p>
-                <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">3. Bapak .....</p>
-                <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">4. Bapak .....</p>
-                <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">5. Bapak .....</p>
-                <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">6. Bapak .....</p>
-        
-                <img class="popup scale-50 duration-1000 transition-all absolute w-1/3 top-0 right-0" src="assets/decoration/flower6 1.png" loading="lazy" alt="flower1">
-                <img class="popup scale-50 duration-1000 transition-all hidden md:visible absolute bottom-0 left-0" src="assets/decoration/flower5 1.png" loading="lazy" alt="flower2">
+                <div class="mb-3 p-2">
+                    <label for="Ucapan" class="form-label">Ucapan dan Doa Anda:</label>
+                    <textarea name="ucapan" class="form-control" rows="4" placeholder="Masukkan Ucapan dan Doa Anda"></textarea>
+                </div>
+                  
+                
+                <button type="submit" name="submit" class="bg-pink-400 p-2 mt-3 rounded-xl">D A F T A R</button>
+              </form>
             </div>
-          </div>
-        
-          <div class="col-md-6">
-            <div class="bg-black/10 w-[95%] mx-auto h-auto  mt-20 lg:mt-40 pt-16 pb-6 lg:pb-14 relative rounded-2xl shadow-sm shadow-slate-50">
-              <h1 class="swipe translate-y-40 duration-1000 transition-all font-dancing text-3xl md:text-5xl text-center">Keluarga <br> Mempelai Wanita</h1>
-              <p class="swipe translate-y-40 duration-1000 transition-all mt-7 text-xl md:text-2xl custom-left-margin">Turut Mengundang :</p>
-              <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">1. Bapak .....</p>
-              <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">2. Bapak .....</p>
-              <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">3. Bapak .....</p>
-              <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">4. Bapak .....</p>
-              <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">5. Bapak .....</p>
-              <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl custom-left-margin">6. Bapak .....</p>
 
-              <img class="popup scale-50 duration-1000 transition-all absolute w-1/3 top-0 right-0" src="assets/decoration/flower6 1.png" loading="lazy" alt="flower1">
-              <img class="popup scale-50 duration-1000 transition-all hidden md:visible absolute bottom-0 left-0" src="assets/decoration/flower5 1.png" loading="lazy" alt="flower2">
-            </div>
-          </div>
-        </div>
-        
       </section>
+      
+      
 
+
+      <!-- gift -->
       <section id="gift" class="mt-20 lg:mt-40">
         <div class="w-[95%] mx-auto lg:w-[929px] h-auto bg-black/10 rounded-2xl ml-auto mr-auto pt-16 pb-6 text-center shadow-sm shadow-slate-50">
           <h1 class="swipe translate-y-40 duration-1000 transition-all font-dancing text-3xl md:text-5xl">Hadiah</h1>
@@ -377,17 +336,15 @@
           <p class="swipe translate-y-40 duration-1000 transition-all text-xl md:text-2xl">a.n Selviana Enjelitha Aprilia Sada</p>
         </div>
       </section>
-      
-      
 
 
       <section class="mt-20 lg:mt-40">
         <div class="bg-black relative w-full h-screen md:h-[607px]">
           <div class="absolute object-cover top-0 w-full h-full">
-            <img class="w-full h-full object-cover opacity-25" src="assets/image/prewed/ALV02541.jpg" loading="lazy" alt="">
+            <img class="w-full h-full object-cover opacity-0" src="assets/image/banner.jpg" loading="lazy" alt="">
             <div class="w-full text-center flex justify-center top-1/3 absolute">
-              <p class="popup scale-50 duration-1000 transition-all w-4/5 text-white text-center font-dancing textlg md:text-4xl">"Sebab dua adalah lebih baik dari pada satu. Karena jika keduanya terjatuh, yang satu dapat memberikan pertolongan kepada yang lain. Tetapi celaka orang yang sendirian; jika ia terjatuh, tidak ada yang mengangkatnya." <br>
-                <br> Pengkhotbah 4 : 9-10 </p>
+              <p class="popup scale-50 duration-1000 transition-all w-4/5 text-white text-center font-dancing textlg md:text-4xl">"Berdua lebih baik dari pada seorang diri, karena mereka menerima upah yang baik dalam jerih payah mereka. Karena kalau mereka jatuh, yang seorang mengangkat temannya, tetapi wai orang yang jatuh, yang tidak mempunyai orang lain untuk mengangkatnya!" <br><br>
+                 Pengkhotbah 4 : 9-10</p>
             </div>
           </div>
         </div>
@@ -404,40 +361,73 @@
   <!-- Script NOREK -->
   <script>
     function copyRekening() {
-      // Pilih teks yang ingin disalin
-      var nomorRekening = document.getElementById("nomorRekening");
-    
-      // Buat elemen input untuk menyalin teks
-      var input = document.createElement("input");
-      input.value = nomorRekening.textContent;
-    
-      // Tambahkan elemen input ke dokumen
-      document.body.appendChild(input);
-    
-      // Pilih teks dalam elemen input
-      input.select();
-    
-      // Salin teks ke clipboard
-      document.execCommand("copy");
-    
-      // Hapus elemen input
-      document.body.removeChild(input);
-    
-      // Berikan umpan balik kepada pengguna
-      alert("Nomor Rekening telah disalin: " + nomorRekening.textContent);
-    }
-
-
-    let url = window.location.href;
-        let cut = url.substr(36);
-        if (cut === "") {
-            document.getElementById("nama").innerHTML = `Belum ada nama tamu undangan`;
-        } else {
-            let nama = cut.replace(/-/g, " ");
-            document.getElementById("nama").innerHTML = nama;
+        // Pilih teks yang ingin disalin
+        var nomorRekening = document.getElementById("nomorRekening");
+        
+        // Buat elemen input untuk menyalin teks
+        var input = document.createElement("input");
+        input.value = nomorRekening.textContent;
+        
+        // Tambahkan elemen input ke dokumen
+        document.body.appendChild(input);
+        
+        // Pilih teks dalam elemen input
+        input.select();
+        
+        // Salin teks ke clipboard
+        document.execCommand("copy");
+        
+        // Hapus elemen input
+        document.body.removeChild(input);
+        
+        // Berikan umpan balik kepada pengguna
+        alert("Nomor Rekening telah disalin: " + nomorRekening.textContent);
         }
-
     </script>
-    
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        document.getElementById("daftar-kehadiran").addEventListener("submit", function (e) {
+          e.preventDefault();
+      
+          const form = e.target;
+          const formData = new FormData(form);
+      
+          fetch('https://script.google.com/macros/s/AKfycbx-BQF4_yUxFthfpRdIhrsFhlX8GeZiC7oCH3qkrU575x6bm0eBdIvT29cIbtTN38oiEQ/exec', {
+            method: 'POST',
+            body: formData
+          })
+          .then(response => response.json())
+          .then(data => {
+            if (data.result === 'success') {
+              // Tampilkan SweetAlert 
+              Swal.fire({
+                title: 'Terimakasih!',
+                text: 'Kami sangat mengharapkan kehadirannya.',
+                icon: 'success'
+              }).then((result) => {
+                if (result.isConfirmed) {
+                  window.location.href = 'index.html';
+                }
+              });
+            } else {
+              Swal.fire({
+                title: 'Gagal!',
+                text: 'Terjadi kesalahan saat mengirim data.',
+                icon: 'error'
+              });
+            }
+          })
+          .catch(error => {
+            console.error('Terjadi kesalahan: ' + error);
+            Swal.fire({
+              title: 'Gagal!',
+              text: 'Terjadi kesalahan saat mengirim data.',
+              icon: 'error'
+            });
+          });
+        });
+      </script>
+      
 </body>
 </html>

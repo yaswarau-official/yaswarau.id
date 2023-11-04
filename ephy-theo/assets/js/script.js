@@ -167,8 +167,8 @@ function galleryNav() {
   $(window).scrollTop($('#gallery').position().top);
 }
 
-function tamuNav() {
-  $(window).scrollTop($('#tamu').position().top);
+function hadirNav() {
+  $(window).scrollTop($('#hadir').position().top);
 }
 
 function giftNav() {

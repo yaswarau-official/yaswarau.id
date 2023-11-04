@@ -46,10 +46,10 @@
       <h1 class="text-5xl lg:text-9xl font-dancing">Buat Undangan</h1>
       <h1 class="text-5xl lg:text-9xl font-dancing">Theo & Ephi</h1>
       <div class="w-full mt-3">
-          <input type="text" class="mt-2 text-sm p-2 text-black rounded-xl w-50" id="tamu" placeholder="Masukan nama tamu " >
+          <input type="text" class="mt-2 text-sm p-2 text-black rounded-xl w-50" id="inviteName" placeholder="Masukan nama tamu " >
       </div>
       <p class=""></p>
-      <button class="bg-pink-400 p-2 mt-3 rounded-xl" href="#tamu"  id="btn-undangan" > <i class="fa-solid fa-clipboard"></i>  Saling URL Undangan</button>
+      <button class="bg-pink-400 p-2 mt-3 rounded-xl" href="#inviteName"  id="btn-undangan" > <i class="fa-solid fa-clipboard"></i>  Salin URL Undangan</button>
     </div>
   </div>
 
@@ -60,16 +60,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script>
     const copyBtn = document.getElementById('btn-undangan')
-    const copyText = document.getElementById('tamu')
+    const copyText = document.getElementById('inviteName')
 
     copyBtn.onclick = () => {
         copyText.select();
         let teks = copyText.value;
         if(teks === '')
         {
-            Swal.fire({         //displays a pop up with sweetalert
+            Swal.fire({        
             icon: 'error',
-            text: 'Masukan nama tamu dengan benar',
+            text: 'Masukan nama inviteName dengan benar',
             showConfirmButton: true,
             timer: 3000
         });
