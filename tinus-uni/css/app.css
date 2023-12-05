@@ -224,7 +224,7 @@ a.bar-icon:hover {
 }
 
 .icon-location.active {
-    background-color: #d7af9f;
+    background-color: #012941;;
     width: 40px;
     height: 40px;
 }
@@ -967,7 +967,7 @@ span.w3-button:hover {
 }
 
 .location:hover {
-    background: #e4d3cd;
+    background: #012941;;
     color: #fff;
     transition: all 0.3s ease;
 }
@@ -1469,8 +1469,8 @@ li span {
         color: #fff;
     }
     .btn-send:hover {
-        background: #d7af9f;
-        border: 4px solid #d7af9f;
+        background: #012941;;
+        border: 4px solid #012941;;
         color: #fff;
     }
 }
