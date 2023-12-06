@@ -47,45 +47,34 @@ $(document).ready(function() {
         } else if (ucapan == "") {
             ohSnap('Ucapan harus diisi', { color: 'red' });
         } else {
+                var script_url = "https://script.google.com/macros/s/AKfycbxH1tKkR4z_ew_5ur92C4V00uF9u6k1rGc7arYqf8losLNBLz2_Veh_10R5fp7uGwA3GA/exec";
+                        let url = script_url + "?callback=ctrlq&lokasi="+lokasi+"&nama=" + nama + "&ucapan=" + ucapan + "&kehadiran=" + kehadiran + "&action=insert";
+                        $("input[type='text']").val("");
+                        $("textarea").val("");
+                        var request = jQuery.ajax({
+                            crossDomain: true,
+                            url: url,
+                            method: "GET",
+                            dataType: "jsonp"
+                        });
+        
+        
             
-            $("#submit").prop('disabled', true);
-            $("#submit").addClass("button--loading");
-            
-            $.ajax({
-                type: 'POST',
-                url: "./php/insert.php",
-                data: {
-                    nama: $("#nama").val(),
-                    lokasi: $("#lokasi").val(),
-                    kehadiran: kehadiran,
-                    ucapan: $("#ucapan").val(),
-                    submit: "insert"
-                },
-                success: function(data) {
+                    $("#submit").prop('disabled', true);
                     //alert(data.trim());
-                    if (data == "success") {
                         ohSnap('Terima Kasih atas doa dan ucapannya', { color: 'green' });
                         $.ajax({
-                            //create an ajax request to display.php
-                            type: "GET",
-                            url: "./php/display.php",
-                            dataType: "html", //expect html to be returned
                             success: function(response) {
                                 $(".block-data-doa").empty();
                                 $(".block-data-doa").append(response);
                                 let scroll_to_bottom = document.getElementById('block-doa');
-                                scroll_to_bottom.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
 
                                 $("#nama").val("");
                                 $("#lokasi").val("");
                                 $("#ucapan").val("");
-                                $("#submit").removeClass("button--loading");
                             },
                         });
-                    }
                     // window.location.reload();
-                }
-            });
 
         }
 
